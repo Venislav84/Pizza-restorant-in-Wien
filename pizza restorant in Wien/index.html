@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ECHTE ITALIENISCHE PIZZA IN WIEN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="top hide-small">
+        <div class="bar xlarge black opacity hover-opacity-off" id="myNavbar">
+            <a href="#" class="bar-item button">STARTSEITE</a>
+            <a href="#menu" class="bar-item button">MENÜ</a>
+            <a href="#about" class="bar-item button">ÜBER UNS</a>
+            <a href="#myMap" class="bar-item button">KONTAKTE</a>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg display-container" id="home">
+        <div class="display-bottomleft padding">
+            <span class="tag xlarge">Geöffnet von 10 bis 24 Uhr</span>
+        </div>
+        <div class="display-middle center">
+            <span class="text-white hide-small" style="font-size:115px">echte<br>ITALIENISCHE PIZZA IN WIEN</span>
+            <span class="text-white hide-large hide-medium" style="font-size:50px"><b>echte<br>italienische
+                    Pizza</b></span>
+            <p><a href="#menu" class="button xxlarge black">Lassen Sie mich das Menü sehen</a></p>
+        </div>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="container black padding-64 xxlarge" id="menu">
+        <div class="content">
+
+            <h1 class="center jumbo" style="margin-bottom:64px">DAS MENÜ</h1>
+            <div class="row center border border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                    <div class="col s4 tablink padding-large hover-red">Pizza</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                    <div class="col s4 tablink padding-large hover-red">Pasta</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                    <div class="col s4 tablink padding-large hover-red">Antipasti</div>
+                </a>
+            </div>
+
+            <div id="Pizza" class="container menu padding-32 white">
+                <h1><b>Margherita</b> <span class="right tag dark-grey round">€12.50</span></h1>
+                <p class="text-grey">Tomatensauce, frishe Mozzarella, frishe Basilikum</p>
+                <hr>
+
+                <h1><b>Quattro Formaggi</b> <span class="right tag dark-grey round">€15.50</span></h1>
+                <p class="text-grey">Vier Käse (Mozzarella, Parmesan, Pecorino, Gorgonzola)</p>
+                <hr>
+
+                <h1><b>Prosciutto Grudo</b> <span class="right tag dark-grey round">€17.00</span></h1>
+                <p class="text-grey">Mozzarella, ital. luftgetrockneter Schinken, Rucola</p>
+                <hr>
+
+                <h1><b>Capricciosa</b> <span class="right tag dark-grey round">€16.50</span></h1>
+                <p class="text-grey">Frishe Champignons, Artischocken, Oliven mit Stein, Käse</p>
+                <hr>
+
+                <h1><b>Salsiccia Piccante</b> <span class="tag red round">Scharf!</span><span
+                        class="right tag dark-grey round">€20.00</span></h1>
+                <p class="text-grey">Tomatensauce, Mozzarella, scharfe-Peperoni-Salami, Basilikum, piccante</p>
+                <hr>
+
+                <h1><b>Degli Artisti</b> <span class="tag grey round">Neue</span><span
+                        class="right tag dark-grey round">€21.50</span></h1>
+                <p class="text-grey">Frishe Champignons, Schinken, Salami, Paprika, Peperoni, Käse, Zwiebeln</p>
+            </div>
+
+            <div id="Pasta" class="container menu padding-32 white">
+                <h1><b>Lasagne</b> <span class="tag grey round">Populäre</span> <span
+                        class="right tag dark-grey round">€13.50</span></h1>
+                <p class="text-grey">feines Rinderragout mit Rotwein, Bèchamelsauce, Käse, Mozzarella, Grana Padano
+                </p>
+                <hr>
+
+                <h1><b>Tortelloni Prosciutto e Panna</b> <span class="right tag dark-grey round">€14.50</span></h1>
+                <p class="text-grey">Schinken, Rahmsauce, Zwiebeln, Grana Padano</p>
+                <hr>
+
+                <h1><b>Risotto Funghi</b> <span class="right tag dark-grey round">€12.70</span></h1>
+                <p class="text-grey">ital. Reis, frishe Champignons, Steinplize,Knoblauch, Zwiebeln, Grana Padano</p>
+                <hr>
+
+                <h1><b>Spaghetti Carbonara</b> <span class="right tag dark-grey round">€11.00</span></h1>
+                <p class="text-grey">Speck, Rahm, Eigelb, Grana Padano</p>
+                <hr>
+
+                <h1><b>Gnocchi Gamberetti</b> <span class="right tag dark-grey round">€25.50</span></h1>
+                <p class="text-grey">Garnelen, Sugo Aurora, Weinbrand, Knoblauch, piccante</p>
+            </div>
+
+
+            <div id="Starter" class="container menu padding-32 white">
+                <h1><b>Tagessuppe</b> <span class="tag grey round">Saisonal</span><span
+                        class="right tag dark-grey round">€5.50</span></h1>
+                <p class="text-grey">Fragen Sie den Kellner</p>
+                <hr>
+
+                <h1><b>Bruschetta</b> <span class="right tag dark-grey round">€9.50</span></h1>
+                <p class="text-grey">Brot mit Basilikum, frische Tomaten, Knoblauch</p>
+                <hr>
+
+                <h1><b>Pizzabrot</b> <span class="right tag dark-grey round">€8.50</span></h1>
+                <p class="text-grey">Knoblauchöl, Oregano</p>
+                <hr>
+
+                <h1><b>Vitello Tonnato</b> <span class="right tag dark-grey round">€10.50</span></h1>
+                <p class="text-grey">Kalbfleisch, Thunfischsauce, Rucola, Kapern</p>
+            </div><br>
+
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div class="container padding-64 red grayscale xlarge" id="about">
+        <div class="content">
+            <h1 class="center jumbo" style="margin-bottom:64px">ÜBER UNS</h1>
+            <p>In der L'Osteria geht die Türe auf und schon fühlt man sich wie in einer typisch italienischen Osteria:
+                Hier kommen Menschen-Familien, Freunde, Pärchen, Jung und Alt-zusammen, um gut zu essen. Es ist ein
+                bisschen laut, lebhaft und über allem schwebt der köstliche Duft der echten italienischen Küche. Ein
+                offener, herzlicher Ort, an dem man so sein darf, wie man ist und sich wie zu Hause fühlt.</p>
+            <p><strong>Der Küchenchef?</strong> Herr Italiano persönlich<img src="img/Der Boss.jpg" style="width:230px"
+                    class="circle right" alt="Küchenchef"></p>
+            <p>Wir sind stolz auf unser Interieur.</p>
+            <img src="img/interior.jpg" style="width:100%" class="margin-top margin-bottom" alt="Restaurant">
+            <h1><b>Öffnungszeiten</b></h1>
+
+            <div class="row">
+                <div class="col s6">
+                    <p>Mon & Dien Geschloßen</p>
+                    <p>Mittwoch 10.00 - 24.00</p>
+                    <p>Donnerstag 10:00 - 24:00</p>
+                </div>
+                <div class="col s6">
+                    <p>Freitag 10:00 - 12:00</p>
+                    <p>Samstag 10:00 - 23:00</p>
+                    <p>Sonntag Ceschloßen</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="img/location.jpg" class="image" style="width:100%;" id="myMap">
+
+    <!-- Contact -->
+    <div class="container padding-64 blue-grey grayscale-min xlarge">
+        <div class="content">
+            <h1 class="center jumbo" style="margin-bottom:64px">Kontakte</h1>
+            <p>Sie finden uns in der Bräunerstraße 11, Wien 1010 Österreich oder rufen uns an unter +43 1 5122536100</p>
+            <p><span class="tag">BITTE!</span> Pizza Genuss für zu Hause - Ob liefern lassen oder selbst abholen, so
+                kommst Du ganz einfach an dein Wunschgericht! </p>
+            <p class="xlarge"><strong>Reservieren Sie</strong> einen Tisch, fragen Sie nach dem heutigen Special
+                oder senden uns einfach eine Nachricht:
+            </p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="input padding-16 border" type="text" placeholder="Name" required name="Name"
+                        style="width: 95%;">
+                </p>
+                <p><input class="input padding-16 border" type="number" placeholder="Wieviel Leute" required
+                        name="People" style="width: 93.5%;"></p>
+                <p><input class="input padding-16 border" type="datetime-local" placeholder="Datum und Zeit" required
+                        name="date" value="2023-09-15T20:00" style="width: 93.2%;"></p>
+                <p><input class="input padding-16 border" type="text" placeholder="Ihre Nachricht" required
+                        name="Message" style="width: 94.4%;"></p>
+                <p><button class="button light-grey block" type="submit" style="width: 91.8%;">NACHRICHT SENDEN</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer. This section contains an Spaces. You can leave it to support us. -->
+    <footer class="center black padding-48 xxlarge">
+        <p>Vielen Dank für Ihr Vertrauen, wir freuen uns auf ein Wiedersehen!</p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " red";
+        }
+        document.getElementById("myLink").click();
+        // ------------------------------------
+
+    </script>
+
+</body>
+
+</html>
